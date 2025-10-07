@@ -1,0 +1,180 @@
+/* ---------- CONFIGURAÇÕES GERAIS ---------- */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 140px; /* evita que o conteúdo fique atrás do header fixo */
+  background-color: rgb(248, 233, 236);
+  font-family: 'Segoe UI', sans-serif;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+/* ---------- CABEÇALHO PADRÃO (HEADER) ---------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(180deg, rgb(237, 175, 186), rgb(230, 146, 163));
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  border-bottom: 4px solid rgb(180, 93, 115);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* ---------- NAVEGAÇÃO ---------- */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: rgb(248, 233, 236);
+  text-shadow: 0 0 8px white;
+}
+
+/* ---------- TÍTULOS ---------- */
+h2, h3 {
+  color: #b45d73;
+}
+
+/* ---------- GALERIA ---------- */
+.galeria {
+  padding: 20px;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(180, 93, 115);
+  transition: transform 0.3s ease;
+}
+
+.grid-galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- ÁUDIO ---------- */
+audio {
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #EAC8C8; 
+  padding: 5px;
+}
+
+/* ---------- RODAPÉ ---------- */
+footer {
+  text-align: center;
+  background-color: #b45d73;
+  color: white;
+  padding: 18px;
+  margin-top: 50px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ====== Tablets (entre 600px e 900px) ====== */
+@media (max-width: 900px) and (min-width: 601px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .menu-icones {
+    gap: 25px;
+  }
+
+  .menu-icones a {
+    width: 130px;
+    padding: 10px;
+  }
+
+  #vit {
+    width: 300px;
+  }
+
+  audio {
+    width: 85%;
+  }
+}
+
+/* ====== Smartphones (até 600px) ====== */
+@media (max-width: 600px) {
+  header {
+    padding: 20px 5px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .frase {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  #vit {
+    width: 80%;
+  }
+
+  .menu-icones {
+    gap: 20px;
+  }
+
+  .menu-icones a {
+    width: 120px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .menu-icones img {
+    width: 60px;
+    height: 60px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  audio {
+    width: 90%;
+  }
+}

@@ -1,0 +1,198 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;   
+  padding: 0;
+}
+
+/* HEADER PADRÃO - APLICAR EM TODAS AS PÁGINAS */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(180deg, rgb(237, 175, 186), rgb(230, 146, 163));
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  border-bottom: 4px solid rgb(180, 93, 115);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+#vit {
+  display: block;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0, 0.4);
+  width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#vit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgb(0, 0, 0);
+}
+header h1 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: rgb(248, 233, 236);
+  text-shadow: 0 0 8px white;
+}
+
+/* Ajuste do conteúdo para não ficar atrás do header fixo */
+body {
+  padding-top: 140px;
+  background-color: rgb(248, 233, 236);
+  font-family: 'Segoe UI', sans-serif;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: rgb(248, 233, 236);
+}
+
+h2, h3 {
+  color: rgb(180, 93, 115);
+}
+
+p {
+  max-width: 700px;
+  margin: 10px auto;
+  text-align: justify;
+  line-height: 1.5;
+}
+audio {
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #EAC8C8; /* rosa suave */
+    padding: 5px;
+    box-shadow: 0 0 10px rgb(93, 116, 180);
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+
+
+footer {
+  display: flex;        
+  flex-direction: column; 
+  text-align: center;
+  background-color: #b45d73;
+  color: white;
+  padding: 18px;
+  margin-top: 50px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ====== Tablets (entre 600px e 900px) ====== */
+@media (max-width: 900px) and (min-width: 601px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .menu-icones {
+    gap: 25px;
+  }
+
+  .menu-icones a {
+    width: 130px;
+    padding: 10px;
+  }
+
+  #vit {
+    width: 300px;
+  }
+
+  audio {
+    width: 85%;
+  }
+}
+
+/* ====== Smartphones (até 600px) ====== */
+@media (max-width: 600px) {
+  header {
+    padding: 20px 5px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .frase {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  #vit {
+    width: 80%;
+  }
+
+  .menu-icones {
+    gap: 20px;
+  }
+
+  .menu-icones a {
+    width: 120px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .menu-icones img {
+    width: 60px;
+    height: 60px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  audio {
+    width: 90%;
+  }
+}
+

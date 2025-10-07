@@ -1,0 +1,190 @@
+/* =========================================
+   🌸 ESTILO BASE - PÁGINA INICIAL RESPONSIVA
+   ========================================= */
+
+/* ====== Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== Corpo ====== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: rgb(248, 233, 236); /* rosa bem claro */
+  color: #4a4a4a; /* cinza suave */
+  text-align: center;
+  margin: 0;
+}
+
+/* ====== Cabeçalho ====== */
+header {
+  background-color: #e79ca9; /* rosa médio */
+  color: white;
+  padding: 30px 10px;
+  border-bottom: 4px solid rgb(180, 93, 115);
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.frase {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* ====== Imagem Principal ====== */
+#vit {
+  border-radius: 15px;
+  border: 5px solid #EAC8C8; 
+  box-shadow: 0 4px 8px rgb(180, 93, 115);
+  margin: 20px 0;
+  width: 350px;
+  max-width: 90%;
+  height: auto;
+}
+
+/* ====== Menu de Ícones ====== */
+.menu-icones {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.menu-icones a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(180, 93, 115);
+  font-weight: bold;
+  background-color: #fff0f3;
+  border-radius: 12px;
+  padding: 12px;
+  width: 150px;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.menu-icones a:hover {
+  background-color: pink;
+  color: white;
+  transform: scale(1.05);
+}
+
+.menu-icones img {
+  margin-bottom: 8px;
+  border-radius: 50%;
+  border: 3px solid #EAC8C8;
+  background-color: white;
+  padding: 5px;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+/* ====== Player de Música ====== */
+audio {
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #EAC8C8;
+  padding: 5px;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* ====== Rodapé ====== */
+footer {
+  margin-top: 40px;
+  background-color: #b45d73;
+  padding: 15px;
+  font-size: 14px;
+  color: white;
+  border-top: 4px solid #AFC8DA; /* azul claro */
+}
+
+footer a {
+  color: #A45D5D;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Tablets (entre 600px e 900px) ====== */
+@media (max-width: 900px) and (min-width: 601px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .menu-icones {
+    gap: 25px;
+  }
+
+  .menu-icones a {
+    width: 130px;
+    padding: 10px;
+  }
+
+  #vit {
+    width: 300px;
+  }
+
+  audio {
+    width: 85%;
+  }
+}
+
+/* ====== Smartphones (até 600px) ====== */
+@media (max-width: 600px) {
+  header {
+    padding: 20px 5px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .frase {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  #vit {
+    width: 80%;
+  }
+
+  .menu-icones {
+    gap: 20px;
+  }
+
+  .menu-icones a {
+    width: 120px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .menu-icones img {
+    width: 60px;
+    height: 60px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  audio {
+    width: 90%;
+  }
+}
+
+
+
