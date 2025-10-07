@@ -106,7 +106,7 @@ li strong {
 
 #vit:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 25px rgb(0,0,0,);
+  box-shadow: 0 8px 25px rgb(0,0,0);
 }
 
 /* ÁUDIO */
